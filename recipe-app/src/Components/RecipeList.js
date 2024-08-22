@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
@@ -23,17 +24,31 @@ const RecipeList = () => {
   };
 
   return (
-    <div>
-      <h1>Recipe List</h1>
-      <SearchBar onSearch={handleSearch} />
-      <ul>
+    <Container>
+      <h1 className="text-center my-4">Recipe List</h1>
+      
+      {/* Centered Search Bar */}
+      <Row className="justify-content-center mb-4">
+        <Col md={8}>
+          <SearchBar onSearch={handleSearch} />
+        </Col>
+      </Row>
+      
+      {/* Recipe Cards */}
+      <Row>
         {filteredRecipes.map(recipe => (
-          <li key={recipe.id}>
-            <a href={`/recipes/${recipe.id}`}>{recipe.name}</a>
-          </li>
+          <Col md={4} key={recipe.id} className="mb-4">
+            <Card>
+              <Card.Body>
+                <Card.Title>{recipe.name}</Card.Title>
+                {/* <Card.Text>{recipe.description}</Card.Text> */}
+                <Card.Link href={`/recipes/${recipe.id}`}>View Recipe</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
-      </ul>
-    </div>
+      </Row>
+    </Container>
   );
 };
 

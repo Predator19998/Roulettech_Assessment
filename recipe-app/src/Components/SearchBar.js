@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FormControl } from 'react-bootstrap';
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -9,11 +10,12 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <input
+    <FormControl
       type="text"
       placeholder="Search recipes..."
       value={query}
       onChange={handleInputChange}
+      className="w-100"
     />
   );
 };
