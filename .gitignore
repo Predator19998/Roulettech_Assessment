@@ -1,0 +1,30 @@
+# Node.js
+recipe-app/node_modules/
+recipe-app/.env
+recipe-app/build/
+
+# Logs
+recipe-app/logs/
+recipe-app/npm-debug.log*
+recipe-app/yarn-debug.log*
+recipe-app/yarn-error.log*
+
+# Dependencies
+recipe-app/package-lock.json
+recipe-app/yarn.lock
+
+# Testing
+recipe-app/coverage/
+
+# Django
+recipe_project/*.pyc
+recipe_project/*.pyo
+recipe_project/*.pyd
+recipe_project/__pycache__/
+recipe_project/staticfiles/
+recipe_project/media/
+recipe_project/db.sqlite3
+recipe_project/.env
+
+# Virtual environment
+venv/
