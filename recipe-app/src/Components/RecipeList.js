@@ -27,7 +27,7 @@ const RecipeList = () => {
     <Container>
       <h1 className="text-center my-4">Recipe List</h1>
       
-      {/* Centered Search Bar */}
+      {/* Search Bar */}
       <Row className="justify-content-center mb-4">
         <Col md={8}>
           <SearchBar onSearch={handleSearch} />
@@ -41,7 +41,6 @@ const RecipeList = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{recipe.name}</Card.Title>
-                {/* <Card.Text>{recipe.description}</Card.Text> */}
                 <Card.Link href={`/recipes/${recipe.id}`}>View Recipe</Card.Link>
               </Card.Body>
             </Card>
