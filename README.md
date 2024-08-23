@@ -93,6 +93,12 @@ cd Roulettech_Assessment
    ```bash
    python manage.py runserver
    ```
+6. Add the data:
+
+   ```bash
+   unzip output_recipes.json.zip
+   python post_to_django.py
+   ```
 
 ## Running the Project
 
