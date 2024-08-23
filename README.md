@@ -18,7 +18,7 @@ The Recipe App is a 3-tier architecture project that includes:
 
 - **Frontend**: A React.js web application for displaying and searching recipes.
 - **Backend**: A Django REST API that serves recipe data to the frontend.
-- **Database**: SQLLite database for storing recipe data.
+- **Database**: SQLite database for storing recipe data.
 
 ## Features
 
@@ -71,7 +71,7 @@ cd Roulettech_Assessment
 2. Create and activate a virtual environment:
 
    ```bash
-   python3 -m venv venv
+   python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
@@ -120,4 +120,4 @@ cd Roulettech_Assessment
 
 - **Frontend**: React.js, Bootstrap
 - **Backend**: Django, Django REST Framework
-- **Database**: SQLLite
+- **Database**: SQLite
